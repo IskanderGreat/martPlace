@@ -1,0 +1,15 @@
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+    }
+    
+    @function min($numbers...) {
+        @return m#{i}n(#{$numbers});
+    }
+
+@import "libs.scss";
+@import "nullstyle.scss";
+@import "vars.scss";
+@import "fonts.scss";
+@import "../modules/header/header.scss";
+@import "../modules/footer/footer.scss";
+@import "header.scss";
