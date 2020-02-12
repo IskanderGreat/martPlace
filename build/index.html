@@ -8,7 +8,69 @@
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
-        @@include("modules/header/header.html")
+        <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <a href="#" class="header__top-logo logo">
+                    <img src="img/header/logo.png" alt="logo">
+                    <span class="logo__start-line">Mart</span>
+                    <span class="logo__end-line">Place</span>
+                </a>
+                <div class="header-info-join">
+                    <a href="#" class="seller-btn">Become a Seller</a>
+                    <ul class="header-info-join__list-buttons">
+                        <li>
+                            <a href="#" class="bell">
+                                <img class="bell__icon" src="img/icon/bell-o.svg" alt="alarm">
+                                <span class="bell__badge">25</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="envelope">
+                                <img class="envelope__icon" src="img/icon/envelope-o.svg" alt="mail">
+                                <span class="envelope__badge">6</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="cart">
+                                <img class="cart__icon" src="img/icon/shopping-cart.svg" alt="cart">
+                                <span class="cart__badge">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="user">
+                        <a href="#" class="user__avatar"></a>
+                        <div class="user__box">
+                            <a href="#" class="user__name">Taofiq Hakim</a>
+                            <a href="#" class="user__money">$20.45</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__bottom-inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="#" class="menu__link">HOME</a></li>
+                        <li><a href="#" class="menu__link">all products</a></li>
+                        <li><a href="#" class="menu__link">wordpress</a></li>
+                        <li><a href="#" class="menu__link">festures</a></li>
+                        <li><a href="#" class="menu__link">Pages</a></li>
+                    </ul>
+                </nav>
+
+                <form action="#" class="header-search-form">
+                    <input type="text" placeholder="Найти товар" class="header-search-form__input">
+                    <button class="header-search-form__btn"><img src="img/icon/search.svg" alt="search"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
 
         <!-- search start -->
         <section class="search">

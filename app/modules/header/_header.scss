@@ -1,0 +1,164 @@
+// header start
+.header {
+  &__top {
+    padding: 25px 0;
+    background-color: $sup-color-5;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__bottom {
+    padding: 18px 0;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// menu start
+.menu {
+  &__list {
+    display: flex;
+
+    li + li {
+      margin-left: 30px;
+    }
+  }
+
+  &__link {
+    color: $sup-color-4;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+// menu end 
+
+// search-form start
+.header-search-form {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #d9dfe5;
+  border-radius: 23px;
+
+  &__input {
+    width: 100%;
+    padding: 15px 130px 15px 20px;
+    border-radius: 23px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 27px;
+    height: 100%;
+    background-color: $decor-color;
+    border-radius: 23px;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+// search-form end
+
+// header-info-join start
+.header-info-join {
+  display: flex;
+  align-items: center;
+
+  &__list-buttons {
+    display: flex;
+    margin-right: 50px;
+
+    li + li {
+      margin-left: 25px;
+    }
+  }
+}
+
+.seller-btn {
+  margin-right: 65px;
+  padding: 10px 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  background-color: $decor-color;
+  color: $sup-color-2;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bell,
+.envelope,
+.cart {
+  position: relative;
+  max-width: 20px;
+
+  &__icon {
+    width: 100%;
+  }
+
+  &__badge {
+    position: absolute;
+    top: -50%;
+    right: -90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+}
+
+.bell__badge {
+  background-color: #ff6a6c;
+}
+
+.envelope__badge {
+  background-color: #62d03b;
+}
+
+.cart__badge {
+  background-color: #0674ec;
+}
+
+
+.user {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 32px;
+    background-color: #7c7979;
+    border-radius: 50%;
+  }
+
+  a {
+    display: block;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    color: $sup-color-4;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__money {
+    font-size: 15px;
+    color: $decor-color;
+  }
+}
+
+// header-info-join end
+// header end

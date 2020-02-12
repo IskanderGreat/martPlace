@@ -36,8 +36,8 @@ gulp.task('scss-modules', function() {
 gulp.task('css-libs', function() {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
-        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'//ситуативно
+        // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+        // 'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'//ситуативно
     ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss')) 
@@ -57,14 +57,19 @@ gulp.task('html', function() {
         .pipe(browserSync.reload({stream: true}))
 }); 
 
+gulp.task('html-modules', function() { 
+    return gulp.src('app/modules/**/*.html') 
+        .pipe(browserSync.reload({stream: true})) 
+});
+
 
 //=============================================================================//
 //Таск для js
 gulp.task('js', function() {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
-        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+        // 'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
+        // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     ])
         .pipe(concat('libs.min.js')) //конкатенация файлов и добавление в файл libs.min.js
         .pipe(uglify()) //сжатие файла
@@ -72,7 +77,7 @@ gulp.task('js', function() {
         .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('minjs', function () { //минифицируем наш main.js и перекидываем в директорию build
+gulp.task('minjs', function () { //минифицируем main.js и перекидываем в директорию build
     return gulp.src('app/js/main.js')
         .pipe(uglify())
         .pipe(rename({
@@ -150,10 +155,11 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('scss')) // Если watch замечает изменения(сохранение) в файлах .scss, то вполняется таск scss
     gulp.watch('app/modules/**/*.scss', gulp.parallel('scss'))
+    gulp.watch('app/modules/**/*.html', gulp.parallel('html'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
 //=============================================================================//
 //Позволяет запускать несколько тасков одновременно
-gulp.task('default', gulp.parallel('css-libs','scss','scss-modules','html','js','minjs','images','browser-sync', 'watch'))
+gulp.task('default', gulp.parallel('css-libs','scss','scss-modules','html-modules','html','js','minjs','images','browser-sync','watch'))

@@ -1,15 +1,148 @@
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
-    }
-    
-    @function min($numbers...) {
-        @return m#{i}n(#{$numbers});
-    }
+  }
+  
+  @function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+  }
 
 @import "libs.scss";
-@import "nullstyle.scss";
 @import "vars.scss";
-@import "fonts.scss";
+@import "fonts.scss"; 
+@import "globalStyle.scss";
 @import "../modules/header/header.scss";
-@import "../modules/footer/footer.scss";
-@import "header.scss";
+
+// search start
+.search {
+  position: relative;
+  padding: 185px 0 235px; 
+  background-color: #441c7c;
+  background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
+  opacity: 0.8;
+  color: $sup-color-2;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 38px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+
+    &-down {
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 68px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__btn {
+    margin: 0 15px;
+  }
+
+  &-form {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      max-width: 807px;
+      margin-right: 30px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #dcdcdc;
+    }
+
+    &__input-text {
+      width: 80%;
+      height: 100%;
+      padding-left: 28px; 
+      border-right: 1px solid #dcdcdc;
+    }
+
+    &__list-btn {
+      color: $main-color;
+      width: 20%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      border-radius: 6px;
+      background-color: #ffffff;
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    &::before {
+      top: -10px;
+      max-width: 1110px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      top: -20px;
+      left: 50%;
+      max-width: 1080px;
+      width: 100%;
+    }
+
+  }
+}
+// search end
+
+// features start
+.features {
+  padding: 186px 0 120px;
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -14px;
+  }
+
+  &__item {
+    margin: 0 14px;
+    padding: 41px 35px 49px;
+    transition: all .3s;
+
+    &-img {
+      margin-bottom: 35px;
+    }
+
+    &-title {
+      margin-bottom: 29px;
+      color: $sup-color-1;
+      font-size: 24px;
+    }
+
+    &-text {
+      max-width: 300px;
+      line-height: 30px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+  }
+}
+// features end
