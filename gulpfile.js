@@ -8,7 +8,8 @@ const gulp = require('gulp'), //присвоение переменной gulp
     autoprefixer = require('gulp-autoprefixer'),
     include = require('gulp-file-include'), //Инклюдит файлы html
     imagemin = require('gulp-imagemin'), //пережимает изображения
-    recompress = require('imagemin-jpeg-recompress'); //тоже пережимает, но лучше. Плагин для плагина
+    recompress = require('imagemin-jpeg-recompress'), //тоже пережимает, но лучше. Плагин для плагина
+    csso = require('gulp-csso');
 
 // Таски (task) задания, которые выполняет gulp
 
@@ -36,11 +37,16 @@ gulp.task('scss-modules', function() {
 gulp.task('css-libs', function() {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
+        'node_modules/rateyo/src/jquery.rateyo.css'
         // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
         // 'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'//ситуативно
     ])
-    .pipe(concat('_libs.scss'))
-    .pipe(gulp.dest('app/scss')) 
+    .pipe(concat('libs.css'))
+    .pipe(csso())
+    .pipe(rename({
+        suffix: '.min'
+    }))
+    .pipe(gulp.dest('build/css')) 
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -68,6 +74,7 @@ gulp.task('html-modules', function() {
 gulp.task('js', function() {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/rateyo/src/jquery.rateyo.js'
         // 'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
         // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     ])
@@ -76,6 +83,11 @@ gulp.task('js', function() {
         .pipe(gulp.dest('build/js')) //размещение файла в папке
         .pipe(browserSync.reload({stream: true}))
 });
+
+// gulp.task('js-modules', function(){
+//     return gulp.src('app/modules/**/*.js')
+//         .pipe()
+// });
 
 gulp.task('minjs', function () { //минифицируем main.js и перекидываем в директорию build
     return gulp.src('app/js/main.js')

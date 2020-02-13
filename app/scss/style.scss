@@ -6,11 +6,11 @@
     @return m#{i}n(#{$numbers});
   }
 
-@import "libs.scss";
 @import "vars.scss";
 @import "fonts.scss"; 
 @import "globalStyle.scss";
 @import "../modules/header/header.scss";
+@import "../modules/products/products.scss";
 
 // search start
 .search {
