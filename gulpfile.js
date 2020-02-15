@@ -65,6 +65,10 @@ gulp.task('html', function() {
 
 gulp.task('html-modules', function() { 
     return gulp.src('app/modules/**/*.html') 
+        .pipe(include({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(browserSync.reload({stream: true})) 
 });
 
@@ -84,10 +88,13 @@ gulp.task('js', function() {
         .pipe(browserSync.reload({stream: true}))
 });
 
-// gulp.task('js-modules', function(){
-//     return gulp.src('app/modules/**/*.js')
-//         .pipe()
-// });
+gulp.task('js-modules', function(){
+    return gulp.src('app/modules/**/*.js')
+        .pipe(concat('modules.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('build/js'))
+        .pipe(browserSync.reload({stream: true}))
+});
 
 gulp.task('minjs', function () { //минифицируем main.js и перекидываем в директорию build
     return gulp.src('app/js/main.js')
@@ -119,6 +126,16 @@ gulp.task('images', function () { //пережимаем изображения 
         //     imagemin.svgo()
         // ]))
         .pipe(gulp.dest('build/img'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
+//=============================================================================//
+//Перенос шрифтов
+gulp.task('fonts', function () { 
+    return gulp.src('app/fonts/**/*.+(eot|svg|ttf|woff|woff2)')
+        .pipe(gulp.dest('build/fonts'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -170,8 +187,9 @@ gulp.task('watch', function() {
     gulp.watch('app/modules/**/*.html', gulp.parallel('html'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('script'))
+    gulp.watch('app/modules/**/*.js', gulp.parallel('js-modules'))
 });
 
 //=============================================================================//
 //Позволяет запускать несколько тасков одновременно
-gulp.task('default', gulp.parallel('css-libs','scss','scss-modules','html-modules','html','js','minjs','images','browser-sync','watch'))
+gulp.task('default', gulp.parallel('css-libs','scss','scss-modules','html-modules','js-modules','html','js','minjs','fonts','images','browser-sync','watch'))

@@ -1,0 +1,38 @@
+.card {
+  &__inner_s {
+  }
+
+  &__link-product_b {
+    min-height: 450px;
+  }
+
+  &__wrap_b {
+    padding: 50px 62px 0 52px;
+  }
+
+  &__title_b {
+    font-size: 24px;
+  }
+
+  &__text_b {
+    margin-bottom: 40px;
+  }
+
+  &__footer_b {
+    margin-top: auto;
+    padding: 25px 0;
+    border-top: 1px solid $sup-color-9;
+  }
+
+  &__footer-box_b {
+    li + li {
+      margin-left: 19px;
+    }
+  }
+
+  &__price_b {
+    padding: 9px 19px;
+    color: $sup-color-8;
+    background-color: $decor-color;
+  }
+}

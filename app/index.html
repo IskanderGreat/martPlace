@@ -1,79 +1,332 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Document</title>
-        <link rel="stylesheet" href="css/libs.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-    <body>
-        @@include("modules/header/header.html")
 
-        <!-- search start -->
-        <section class="search">
-            <div class="container">
-                <div class="search__title">
-                    <div class="search__title-up">Create Your Own</div>
-                    <div class="search__title-down">Digital Product Marketplace</div>
-                </div>
-                <p class="search__subtitle">
-                    MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-                </p>
-                <div class="search__buttons">
-                    <a href="#" class="search__btn btn btn_figure_elipse">View All Products</a>
-                    <a href="#" class="search__btn btn btn_figure_elipse">Popular Products</a>
-                </div>
-                <form action="#" class="search-form">
-                    <div class="search-form__box">
-                        <input type="text" class="search-form__input-text" placeholder="Search your products...">
-                        <div class="search-form__list-btn">
-                            All Categories
-                        </div>
-                    </div>
-                    <input type="submit" class="search-form__input-submit btn btn_figure_rectangle">
-                </form>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include("modules/header/header.html")
+
+    <!-- search start -->
+    <section class="search">
+        <div class="container">
+            <div class="search__title">
+                <div class="search__title-up">Create Your Own</div>
+                <div class="search__title-down">Digital Product Marketplace</div>
             </div>
-        </section>
-        <!-- search end -->
+            <p class="search__subtitle">
+                MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+            </p>
+            <div class="search__buttons">
+                <a href="#" class="search__btn btn btn_figure_elipse">View All Products</a>
+                <a href="#" class="search__btn btn btn_figure_elipse">Popular Products</a>
+            </div>
+            <form action="#" class="search-form">
+                <div class="search-form__box">
+                    <input type="text" class="search-form__input-text" placeholder="Search your products...">
+                    <div class="search-form__select-box">
+                        <select class="search-form__select-list">
+                            <option>All products</option>
+                            <option>some 1</option>
+                            <option>some 2</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="search-form__input-submit btn btn_figure_rectangle">Search Now</button>
+            </form>
+        </input>
+    </section>
+    <!-- search end -->
+    
+    <!-- features start -->
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__item">
+                    <img class="features__item-img" src="img/features/features-img-1.png" alt="png">
+                    <div class="features__item-title">
+                        Best UX Research
+                    </div>
+                    <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__item-img" src="img/features/features-img-2.png" alt="png">
+                    <div class="features__item-title">
+                        Fully Responsive
+                    </div>
+                    <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__item-img" src="img/features/features-img-3.png" alt="png">
+                    <div class="features__item-title">
+                        Buy & Sell Easily
+                    </div>
+                    <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features end -->
 
-        <!-- features start -->
-        <section class="features">
-            <div class="container">
-                <div class="features__inner">
-                    <div class="features__item">
-                        <img class="features__item-img" src="img/features/features-img-1.png" alt="png">
-                        <div class="features__item-title">
-                            Best UX Research
-                        </div>
-                        <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+    <!-- card-slider-big start -->
+    @@include("modules/card-slider/card-slider-big/card-slider-big.html")
+    <!-- card-slider-big end -->
+
+    <!-- products start -->
+    <section class="products">
+        <div class="container">
+            <div class="products__title">
+                Newest Release Products
+                <span class="products__title-filter"></span>
+            </div>
+            <ul class="products__tags tags">
+                <li><a href="#" class="tags__item">Plugins</a></li>
+                <li><a href="#" class="tags__item">WordPress</a></li>
+                <li><a href="#" class="tags__item">Site Template</a></li>
+                <li><a href="#" class="tags__item">PSD Template</a></li>
+                <li><a href="#" class="tags__item">Joomla</a></li>
+                <li><a href="#" class="tags__item">User Interface</a></li>
+                <li><a href="#" class="tags__item">Landing Page</a></li>
+                <li><a href="#" class="tags__item">Software </a></li>
+            </ul>
+            <div class="products__inner">
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+                <div class="products__item">
+                    @@include("modules/card/card-small/card-small.html")
+                </div>
+            </div>
+            <div class="products__box">
+                <a href="#" class="products__btn btn btn_figure_elipse">All New Products</a>
+            </div>
+        </div>
+    </section>
+    <!-- products end -->
+
+    <!-- card-slider-small start -->
+    @@include("modules/card-slider/card-slider-small/card-slider-small.html")
+    <!-- card-slider-small end -->
+
+    <!-- fact start -->
+    <section class="fact">
+        <div class="container">
+            <ul class="fact__inner">
+                <li class="fact__item">
+                    <p class="fact__item-icon fact__item-briefcase">38,436</p>
+                    <p class="fact__item-text">items for sale</p>
+                </li>
+                <li class="fact__item">
+                    <p class="fact__item-icon fact__item-cloud">3,736</p>
+                    <p class="fact__item-text">total sales</p>
+                </li>
+                <li class="fact__item">
+                    <p class="fact__item-icon fact__item-smile">2,736</p>
+                    <p class="fact__item-text">happy customers</p>
+                </li>
+                <li class="fact__item">
+                    <p class="fact__item-icon fact__item-users">25,736</p>
+                    <p class="fact__item-text">members</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- fact end -->
+
+    <!-- choose start -->
+    <section class="choose">
+        <div class="container">
+            <div class="choose__title">
+                @@include("modules/title/title.html")
+            </div>
+            <div class="choose__inner">
+                <div class="choose__item">
+                    <span class="choose__item-num">01</span>
+                    <div class="choose__item-icon choose__item-icon_license"></div>
+                    <div class="choose__item-title">One Time Payment</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__item-num">02</span>
+                    <div class="choose__item-icon choose__item-icon_magic"></div>
+                    <div class="choose__item-title">Quality Products</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__item-num">03</span>
+                    <div class="choose__item-icon choose__item-icon_lock"></div>
+                    <div class="choose__item-title">100% Secure Payment</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__item-num">04</span>
+                    <div class="choose__item-icon choose__item-icon_chart"></div>
+                    <div class="choose__item-title">Well Organized Code</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__item-num">05</span>
+                    <div class="choose__item-icon choose__item-icon_leaf"></div>
+                    <div class="choose__item-title">Life Time Free Update</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="choose__item">
+                    <span class="choose__item-num">06</span>
+                    <div class="choose__item-icon choose__item-icon_phone"></div>
+                    <div class="choose__item-title">Fast and Friendly Support</div>
+                    <p class="choose__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                        ut scelerisque
+                        the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- choose end -->
+
+    <!-- shopping start -->
+    <section class="shopping">
+        <div class="shopping__inner">
+            <div class="shopping__item inline-bg-style" style="background-image: url('img/shopping/sell-bg.jpg');">
+                <img class="shopping__item-icon" src="img/shopping/sell.svg" alt="sell">
+                <div class="shopping__item-title">Sell Your Products</div>
+                <div class="shopping__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+                <a href="#" class="shopping__item-btn shopping__item-btn_sell btn btn_figure_elipse">Become an Author</a>
+            </div>
+            <div class="shopping__item inline-bg-style" style="background-image: url('img/shopping/buy-bg.jpg');">
+                <img class="shopping__item-icon" src="img/shopping/buy.svg" alt="buy">
+                <div class="shopping__item-title">Start Shopping Today</div>
+                <div class="shopping__item-text text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                    the mattis, leo quam aliquet diamcongue is laoreet elit metus.</div>
+                <a href="#" class="shopping__item-btn shopping__item-btn_buy btn btn_figure_elipse">Start Shopping</a>
+            </div>
+        </div>
+    </section>
+    <!-- shopping end -->
+
+    <!-- feedback start -->
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__title">
+                @@include("modules/title/title.html")
+            </div>
+            <div class="feedback__inner">
+                <div class="feedback__item">
+                    @@include("modules/reviews/reviews.html")
+                </div>
+                <div class="feedback__item">
+                    @@include("modules/reviews/reviews.html")
+                </div>
+            </div>
+            <div class="feedback__box">
+                <a href="" class="feedback__btn btn btn_figure_elipse">View All Reviews</a>
+            </div>
+        </div>
+    </section>
+    <!-- feedback end -->
+
+    <!-- news start -->
+    <section class="news">
+        <div class="container">
+            <div class="news__title">
+                @@include("modules/title/title.html")
+            </div>
+            <div class="news__inner">
+                <div class="news__item">
+                    @@include("modules/news-item/news-item.html")
+                </div>
+                <div class="news__item">
+                    @@include("modules/news-item/news-item.html")
+                </div>
+                <div class="news__item">
+                    @@include("modules/news-item/news-item.html")
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news end -->
+
+    <!-- support start -->
+    <section class="support">
+        <div class="container">
+            <div class="support__inner">
+                <div class="support__item">
+                    <img src="img/support/money-back.png" alt="money-back" class="support__icon">
+                    <div class="support__text">
+                        30 Days Money Back <span class="support__text-back">Guarantee</span>
                     </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="img/features/features-img-2.png" alt="png">
-                        <div class="features__item-title">
-                            Fully Responsive
-                        </div>
-                        <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="img/features/features-img-3.png" alt="png">
-                        <div class="features__item-title">
-                            Buy & Sell Easily
-                        </div>
-                        <p class="features__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+                </div>
+                <div class="support__item">
+                    <img src="img/support/support.png" alt="support" class="support__icon">
+                    <div class="support__text">
+                        Fast and Friendly <span class="support__text-support">Guarantee Support</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- features end -->
+        </div>
+    </section>
+    <!-- support end -->
 
-        <!--  -->
-        @@include("modules/products/products.html")
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/libs.min.js"></script>
-		<script src="js/main.min.js"></script>
-    </body>
+    <!-- banner start -->
+    <section class="banner">
+        <div class="banner__title">Ready to Join Our Marketplace!</div>
+        <p class="banner__text">Over 25,000 designers and developers trust the MartPlace.</p>
+        <a href="#" class="banner__btn btn btn_figure_elipse">Join Us Today</a>
+    </section>
+    <!-- banner end -->
+
+    <!-- footer start -->
+    @@include("modules/footer/footer.html")
+    <!-- footer end -->
+
+    <!-- @@include("modules/card/card-big/card-big.html")
+        @@include("modules/card/card-small/card-small.html")
+        @@include("modules/card-slider/card-slider-small/card-slider-small.html")
+        @@include("modules/card-slider/card-slider-big/card-slider-big.html") -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/modules.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
 </html>
-
-

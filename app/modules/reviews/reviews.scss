@@ -1,0 +1,40 @@
+.reviews {
+  max-width: 555px;
+  padding: 50px 43px 40px 38px;
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+  border-left: 2px solid $decor-color;
+  border-radius: 0 4px 4px 0;
+  background-color: $sup-color-8;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 19px;
+    border-radius: 50%;
+  }
+  
+  &__name {
+    margin-bottom: 5px;
+    color: $sup-color-1;
+    font-size: 20px;
+  }
+
+  &__icon {
+    margin-left: auto;
+    align-self: flex-start;
+
+    &::before {
+      content: "\e83f";
+      font-family: 'Linearicons-Free';
+      color: #e8e8e8;
+      font-size: 60px;
+      font-weight: 400;
+    }
+  }
+}

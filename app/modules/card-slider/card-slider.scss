@@ -1,0 +1,58 @@
+.card-slider {
+  background-color: $sup-color-10;
+  padding: 120px 0;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: $sup-color-8;
+    color: $sup-color-1;
+    font-size: 30px;
+
+    &-arrows { 
+      position: relative;
+      max-width: 110px;
+      width: 100%;
+      min-height: 45px;
+      border-radius: 23px;
+      background-color: $sup-color-3;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 28px;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Linearicons-Free';
+      color: $sup-color-8;
+      font-size: 14px;
+    }
+  }
+
+  &__next-arrow {
+    &::before {
+      content: "\e876";
+      right: 25px;
+    }
+  }
+
+  &__prev-arrow {
+    &::before {
+      content: "\e875";
+      left: 25px;
+    }
+  }
+}
+

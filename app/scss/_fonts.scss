@@ -1,2 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
 
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url('../fonts/Linearicons-Free.eot?7y0ygv');
+	src:url('../fonts/Linearicons-Free.eot?#iefix7y0ygv') format('embedded-opentype'),
+		url('../fonts/Linearicons-Free.woff2?7y0ygv') format('woff2'),
+		url('../fonts/Linearicons-Free.woff?7y0ygv') format('woff'),
+		url('../fonts/Linearicons-Free.ttf?7y0ygv') format('truetype'),
+		url('../fonts/Linearicons-Free.svg?7y0ygv#Linearicons-Free') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?p4x9zi');
+  src:  url('../fonts/icomoon.eot?p4x9zi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?p4x9zi') format('truetype'),
+    url('../fonts/icomoon.woff?p4x9zi') format('woff'),
+    url('../fonts/icomoon.svg?p4x9zi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

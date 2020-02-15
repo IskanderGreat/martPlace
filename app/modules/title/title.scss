@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+
+  &__body {
+    margin-bottom: 24px;
+    font-size: 36px;
+
+    &-start-line {
+      color: $sup-color-1;
+    }
+
+    &-end-line {
+      color: $decor-color;
+    }
+  }
+  
+  &__text {
+    margin: 0 auto;
+    max-width: 671px;
+  }
+}

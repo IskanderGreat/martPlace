@@ -1,0 +1,97 @@
+.card {
+  &__inner {
+    display: flex;
+    background-color: $sup-color-8;
+    box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+  }
+
+  &__link-product {
+    flex: 0 0 47%;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    color: $sup-color-1;
+    font-weight: 500;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+  }
+
+  &__link-person,
+  &__link-CMS {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+    border-radius: 50%;
+  }
+
+  &__link-CMS {
+    margin-left: 21px;
+
+    &-icon { 
+      margin-right: 9px;
+    }
+  }
+
+  &__tags {
+    margin-bottom: 44px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer-box {
+    display: flex;
+    font-size: 15px;
+  }
+
+  &__price {
+    font-weight: 500;
+    border-radius: 16px;
+  }
+
+  &__like,
+  &__buys {
+    position: relative;
+    font-size: 15px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: 'Linearicons-Free';
+    }
+  }
+
+  &__like {
+    padding-left: 26px;
+    
+    &::before {
+      content: "\e813";
+      color: #7347c1;
+    }
+  }
+
+  &__buys {
+    padding-left: 23px;
+    color: $decor-color;
+    
+    &::before {
+      content: "\e82e";
+
+    }
+  }
+}
