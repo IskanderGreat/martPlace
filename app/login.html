@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- header start -->
+  @@include("modules/header/header.html")
+  <!-- header end -->
+
+  <section class="login">
+    <div class="login__wrap">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb__active">Login</li>
+        </ul>
+        <div class="login__title">Login</div>
+      </div>
+    </div>
+    <div class="login__box">
+      <div class="container">
+        <form action="#" class="login-form">
+          <p class="login-form__text text">Please enter the email address for your account. A verification
+            code will be sent to you. Once you have received the
+            verification code, you will be able to choose a new password
+            for your account.</p>
+          <div class="login-form__bottom">
+            <label class="login-form__input-mail-label" for="login-form__input-mail">Email Address</label>
+            <input type="text" class="login-form__input-mail" placeholder="Enter your email address...">
+            <button class="login-form__btn btn btn_figure_elipse">Submit Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer start -->
+  @@include("modules/footer/footer.html")
+  <!-- footer end -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/modules.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

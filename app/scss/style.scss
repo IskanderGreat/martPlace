@@ -1,13 +1,13 @@
 @function max($numbers...) {
-    @return m#{a}x(#{$numbers});
-  }
-  
-  @function min($numbers...) {
-    @return m#{i}n(#{$numbers});
-  }
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
 
 @import "vars.scss";
-@import "fonts.scss"; 
+@import "fonts.scss";
 @import "globalStyle.scss";
 @import "../modules/header/header.scss";
 @import "../modules/card/card.scss";
@@ -20,10 +20,15 @@
 @import "../modules/footer/footer.scss";
 
 
+
+/////////////////////////////////////////////
+////////////// index.html //////////////////
+////////////////////////////////////////////
+
 // search start
 .search {
   position: relative;
-  padding: 185px 0 235px; 
+  padding: 185px 0 235px;
   background-color: #441c7c;
   background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
   opacity: 0.8;
@@ -81,7 +86,7 @@
     &__input-text {
       width: 80%;
       height: 100%;
-      padding-left: 28px; 
+      padding: 0 30px;
       border-right: 1px solid #dcdcdc;
     }
 
@@ -143,6 +148,7 @@
 
   }
 }
+
 // search end
 
 
@@ -184,6 +190,7 @@
     }
   }
 }
+
 // features end
 
 
@@ -194,7 +201,7 @@
   padding: 120px 0;
 
   &__title {
-    padding: 44px 30px; 
+    padding: 44px 30px;
     margin-bottom: 50px;
     background-color: $sup-color-8;
     color: $sup-color-1;
@@ -230,6 +237,7 @@
     }
   }
 }
+
 // products end
 
 
@@ -251,6 +259,7 @@
 
     &-icon {
       margin-bottom: 20px;
+
       &::before {
         position: absolute;
         top: -46px;
@@ -298,6 +307,7 @@
     }
   }
 }
+
 // fact end
 
 
@@ -348,43 +358,49 @@
 
       &_license {
         color: #0674ec;
-          &::before {
-            content: "\e822";
+
+        &::before {
+          content: "\e822";
         }
       }
 
       &_magic {
         color: #7f4ec2;
-          &::before {
-            content: "\e803";
+
+        &::before {
+          content: "\e803";
         }
       }
 
       &_lock {
         color: #77de51;
-          &::before {
-            content: "\e80f";
+
+        &::before {
+          content: "\e80f";
         }
       }
 
       &_chart {
         color: #feb71d;
-          &::before {
-            content: "\e843";
+
+        &::before {
+          content: "\e843";
         }
       }
 
       &_leaf {
         color: #58c9e9;
-          &::before {
-            content: "\e849";
+
+        &::before {
+          content: "\e849";
         }
       }
 
       &_phone {
         color: #ff6a6d;
-          &::before {
-            content: "\e831";
+
+        &::before {
+          content: "\e831";
         }
       }
     }
@@ -396,6 +412,7 @@
     }
   }
 }
+
 // choose end
 
 
@@ -415,7 +432,7 @@
     align-items: center;
     text-align: center;
     color: $sup-color-8;
-    
+
     &-icon {
       margin-bottom: 50px;
     }
@@ -452,6 +469,7 @@
     }
   }
 }
+
 // shopping end
 
 
@@ -472,7 +490,7 @@
     margin-bottom: 60px;
   }
 
-  &__item + &__item {
+  &__item+&__item {
     margin-left: 30px;
   }
 
@@ -489,6 +507,7 @@
     }
   }
 }
+
 // feedback end
 
 
@@ -509,6 +528,7 @@
     justify-content: space-between;
   }
 }
+
 // news end
 
 
@@ -538,6 +558,7 @@
   &__text {
     color: $sup-color-1;
     font-size: 24px;
+
     &-back {
       color: $decor-color;
     }
@@ -555,9 +576,10 @@
     display: block;
     width: 1px;
     height: 100%;
-    background-color: #e8eaf3; 
+    background-color: #e8eaf3;
   }
 }
+
 // support end
 
 
@@ -569,7 +591,7 @@
   padding: 110px 0;
   background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
   text-align: center;
-  
+
   &__title {
     margin-bottom: 23px;
     color: $sup-color-8;
@@ -591,4 +613,69 @@
     }
   }
 }
+
 // banner end
+
+
+
+/////////////////////////////////////////////
+////////////// login.html //////////////////
+////////////////////////////////////////////
+
+// login start
+.login {
+  &__wrap {
+    padding: 58px 0 54px;
+    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
+  }
+
+  &__title {
+    margin-top: 25px;
+    color: $sup-color-8;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__box {
+    padding: 70px 0 120px;
+    background-color: $sup-color-10;
+  }
+
+  &-form {
+    max-width: 555px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: $sup-color-8;
+
+    &__text {
+      padding: 60px 50px 30px;
+      border-bottom: 1px solid#e8ebf0;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 50px 60px;
+    }
+
+    &__input-mail-label {
+      margin-bottom: 15px;
+      color: $sup-color-1;
+      font-weight: 500;
+    }
+
+    &__input-mail {
+      margin-bottom: 32px;
+      padding: 17px 21px;
+      background-color: #f4f5f8;
+    }
+
+    &__btn {
+      margin: 0 auto 32px 0;
+      background-color: $decor-color;
+    }
+  }
+}
+
+// login end
