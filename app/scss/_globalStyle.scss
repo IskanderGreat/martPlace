@@ -304,8 +304,17 @@ body {
       background-color: #f4f5f8;
     }
 
+    &-checkbox {
+      margin-bottom: 15px;
+    }
+
     &-btn {
       margin-bottom: 40px;
+    }
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
     }
 
     &-question {
