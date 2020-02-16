@@ -27,8 +27,8 @@ button {
 }
 
 form {
-  border: none;
   background-color: none;
+  font: inherit;
 }
 
 ul {
@@ -152,7 +152,6 @@ body {
 .text {
   line-height: 30px;
 }
-
 // text end
 
 // inline-bg-style start
@@ -299,7 +298,7 @@ body {
       display: block;
       width: 100%;
       margin-bottom: 30px;
-      padding: 18px 21px;
+      padding: 18px 20px;
       color: $sup-color-13;
       background-color: #f4f5f8;
     }
@@ -327,6 +326,10 @@ body {
           text-decoration: underline;
         }
       }
+    }
+
+    &-comment {
+      padding: 18px 20px;
     }
   }
 }

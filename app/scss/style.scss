@@ -748,3 +748,113 @@
   }
 }
 // register end
+
+
+
+/////////////////////////////////////////////
+////////////// contacts.html ///////////////
+////////////////////////////////////////////
+
+// contacts start
+.contacts {
+  padding: 120px 0;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 50px;
+  }
+
+  &__item {
+    flex: 0 1 33.333%;
+    margin: 0 15px;
+    padding: 55px 0 51px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: $sup-color-8;
+    text-align: center;
+
+    &-icon {
+      margin-bottom: 53px;
+      &::before {
+        margin-bottom: 48px;
+        font-family: 'Linearicons-Free';
+        color: $decor-color;
+        font-size: 48px;
+      }
+
+      &_marker {
+        &::before {
+          content: "\e833";
+        }
+      }
+
+      &_phone {
+        &::before {
+          content: "\e831";
+        }
+      }
+
+      &_email {
+        &::before {
+          content: "\e81a";
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-link {
+      line-height: 26px;
+      
+    }
+  }
+
+  &-form {
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+
+    &__bottom {
+      padding: 50px 195px 30px;
+
+      &-inner {
+        flex-wrap: wrap;
+        margin: 0 -15px;
+      }
+  
+      &-input {
+        flex: 0 1 calc(50% - 30px);
+        margin: 30 15px;
+        background-color: $sup-color-8;
+        border: 1px solid #e7e7e7;
+      }
+
+      &-comment {
+        max-width: 100%;
+        width: 100%;
+        height: 130px;
+        border: 1px solid #e7e7e7;
+      }
+    }
+  }
+}
+
+.breadcrumb-contacts {
+
+  &__title {
+    text-align: center;
+    line-height: 60px;
+
+    &_light {
+      font-weight: 300;
+    }
+  }
+}
+// contacts end
