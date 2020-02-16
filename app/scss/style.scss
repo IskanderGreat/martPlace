@@ -20,7 +20,6 @@
 @import "../modules/footer/footer.scss";
 
 
-
 /////////////////////////////////////////////
 ////////////// index.html //////////////////
 ////////////////////////////////////////////
@@ -577,42 +576,7 @@
     background-color: #e8eaf3;
   }
 }
-
 // support end
-
-
-
-
-
-// banner start
-.banner {
-  padding: 110px 0;
-  background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
-  text-align: center;
-
-  &__title {
-    margin-bottom: 23px;
-    color: $sup-color-8;
-    font-size: 36px;
-  }
-
-  &__text {
-    margin-bottom: 50px;
-    color: #e7e7e7;
-    font-size: 18px;
-  }
-
-  &__btn {
-    background-color: $sup-color-8;
-    color: $decor-color;
-
-    &:hover {
-      border: 1px solid $sup-color-7;
-    }
-  }
-}
-
-// banner end
 
 
 
@@ -800,3 +764,69 @@
   }
 }
 // terms end
+
+
+
+/////////////////////////////////////////////
+////////////// works.html //////////////////
+////////////////////////////////////////////
+
+// works start
+.works {
+  &__item {
+    padding: 100px 0;
+    &-img {
+
+    }
+
+    &-main {
+      max-width: 450px;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+      color: $sup-color-1;
+      font-size: 30px;
+    }
+
+    &-text {
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      &:hover {
+        color: $sup-color-8;
+        background-color: $decor-color;
+      }
+    }
+
+    &_bg_g {
+      background-color: $sup-color-5;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .breadcrumb {
+    padding: 90px 0 30px;
+    text-align: center;
+
+    &__title {
+      max-width: 400px;
+      margin: 0 auto 75px;
+      line-height: 50px;
+
+      &-light {
+        font-weight: 300;
+      }
+    }
+
+    &__list {
+      justify-content: center;
+    }
+  }
+}
+// works end

@@ -121,7 +121,7 @@ body {
 
   &_figure_elipse {
     padding: 15px 31px;
-    color: $sup-color-8;
+    color: $decor-color;
     border: 1px solid $sup-color-8;
     border-radius: 28px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -134,6 +134,10 @@ body {
 
   &_bg_b {
     background-color: $decor-color;
+  }
+
+  &_bg_w {
+    background-color: $sup-color-8;
   }
 
 }
@@ -153,7 +157,6 @@ body {
   background-size: cover;
   background-position: center;
 }
-
 // inline-bg-style end
 
 // tags start
@@ -189,7 +192,6 @@ body {
 .slick-track {
   display: flex;
 }
-
 // slick end
 
 // breadcrumb start
@@ -223,5 +225,35 @@ body {
     font-weight: 500;
   }
 }
-
 // breadcrumb end
+
+
+
+// banner start
+.banner {
+  padding: 110px 0;
+  background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
+  text-align: center;
+
+  &__title {
+    margin-bottom: 23px;
+    color: $sup-color-8;
+    font-size: 36px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    color: #e7e7e7;
+    font-size: 18px;
+  }
+
+  &__btn {
+    background-color: $sup-color-8;
+    color: $decor-color;
+    
+    &:hover {
+      border: 1px solid $sup-color-7;
+    }
+  }
+}
+// banner end
