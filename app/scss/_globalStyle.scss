@@ -120,17 +120,20 @@ body {
   }
 
   &_figure_elipse {
-    padding: 12px 31px;
+    padding: 15px 31px;
     color: $sup-color-8;
     border: 1px solid $sup-color-8;
     border-radius: 28px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background-color: $decor-color;
     transition: all .3s;
 
     &:hover {
-      padding: 12px 40px;
+      padding: 15px 40px;
     }
+  }
+
+  &_bg_b {
+    background-color: $decor-color;
   }
 
 }

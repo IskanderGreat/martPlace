@@ -29,9 +29,7 @@
 .search {
   position: relative;
   padding: 185px 0 235px;
-  background-color: #441c7c;
   background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
-  opacity: 0.8;
   color: $sup-color-2;
   text-align: center;
 
@@ -619,11 +617,11 @@
 
 
 /////////////////////////////////////////////
-////////////// login.html //////////////////
+////////////// recover.html //////////////////
 ////////////////////////////////////////////
 
-// login start
-.login {
+// recover start
+.recover {
 
   &__box {
     padding: 70px 0 120px;
@@ -666,7 +664,7 @@
   }
 }
 
-// login end
+// recover end
 
 
 
@@ -689,4 +687,85 @@
     margin-bottom: 40px;
   }
 }
+
 // error end
+
+
+
+/////////////////////////////////////////////
+////////////// login.html //////////////////
+////////////////////////////////////////////
+
+// login start
+.login {
+
+  &__box {
+    padding: 70px 120px;
+    background-color: $sup-color-10;
+  }
+
+  &-form {
+    max-width: 555px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: $sup-color-8;
+
+    &__top {
+      padding: 60px 0 30px;
+      text-align: center;
+      border-bottom: 1px solid #e8ebf0;
+    }
+
+    &__title {
+      margin-bottom: 26px;
+      color: $sup-color-1;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 50px 60px;
+    }
+
+    &__input-mail-label,
+    &__input-password-label {
+      margin-bottom: 15px;
+      color: $sup-color-1;
+      font-weight: 500;
+    }
+
+    &__input-mail,
+    &__input-password {
+      margin-bottom: 30px;
+      padding: 18px 21px;
+      color: #898f96;
+      background-color: #f4f5f8;
+    }
+
+    &__checkbox {
+      margin-right: 15px;
+    }
+
+    &__btn {
+      margin: 33px auto 40px 0;
+    }
+
+    &__recovery {
+      display: flex;
+      justify-content: space-between;
+      color: #898f96;
+      &-link {
+        color: $decor-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// login end
