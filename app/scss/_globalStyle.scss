@@ -140,6 +140,10 @@ body {
     background-color: $sup-color-8;
   }
 
+  &_color_w {
+    color: $sup-color-8;
+  }
+
 }
 
 // btn end
@@ -250,10 +254,71 @@ body {
   &__btn {
     background-color: $sup-color-8;
     color: $decor-color;
-    
+
     &:hover {
       border: 1px solid $sup-color-7;
     }
   }
 }
 // banner end
+
+
+
+
+// form start
+.form {
+  max-width: 555px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: $sup-color-8;
+  margin: 0 auto;
+
+  &__top {
+    padding: 60px 65px 30px;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+
+    &-title {
+      color: $sup-color-1;
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__bottom {
+    padding: 30px 50px 60px;
+
+    &-label {
+      display: block;
+      margin-bottom: 15px;
+      color: $sup-color-1;
+      font-weight: 500;
+    }
+
+    &-input {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 18px 21px;
+      color: $sup-color-13;
+      background-color: #f4f5f8;
+    }
+
+    &-btn {
+      margin-bottom: 40px;
+    }
+
+    &-question {
+      color: #898f96;
+
+      &-link {
+        color: $decor-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+// form end
