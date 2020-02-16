@@ -1,6 +1,7 @@
 html,
 body {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -59,10 +60,11 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .content {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 .container {
@@ -101,6 +103,8 @@ body {
 // btn start
 .btn {
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
 
   &_figure_rectangle {
     padding: 15px 68px;
@@ -116,12 +120,17 @@ body {
   }
 
   &_figure_elipse {
-    padding: 15px 31px;
+    padding: 12px 31px;
     color: $sup-color-8;
     border: 1px solid $sup-color-8;
     border-radius: 28px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: $decor-color;
     transition: all .3s;
+
+    &:hover {
+      padding: 12px 40px;
+    }
   }
 
 }
@@ -182,23 +191,34 @@ body {
 
 // breadcrumb start
 .breadcrumb {
-  display: flex;
-  color: $sup-color-8;
-  font-size: 15px;
+  padding: 58px 0 54px;
+  background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
 
-  li + li {
-    margin-left: 5px;
-  }
+  &__list {
+    display: flex;
+    color: $sup-color-8;
+    font-size: 15px;
 
-  li+li::before {
-    content: "/";
-    padding-right: 5px;
+    li+li {
+      margin-left: 5px;
+    }
+
+    li+li::before {
+      content: "/";
+      padding-right: 5px;
+    }
   }
 
   &__active {
     color: #bfcad7;
   }
 
+  &__title {
+    margin-top: 25px;
+    color: $sup-color-8;
+    font-size: 30px;
+    font-weight: 500;
+  }
 }
 
 // breadcrumb end

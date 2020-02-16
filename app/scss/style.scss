@@ -624,17 +624,6 @@
 
 // login start
 .login {
-  &__wrap {
-    padding: 58px 0 54px;
-    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
-  }
-
-  &__title {
-    margin-top: 25px;
-    color: $sup-color-8;
-    font-size: 30px;
-    font-weight: 500;
-  }
 
   &__box {
     padding: 70px 0 120px;
@@ -673,9 +662,31 @@
 
     &__btn {
       margin: 0 auto 32px 0;
-      background-color: $decor-color;
     }
   }
 }
 
 // login end
+
+
+
+/////////////////////////////////////////////
+////////////// Error.html //////////////////
+////////////////////////////////////////////
+
+// error start
+.error {
+  &__box {
+    padding: 83px 0 100px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+// error end
