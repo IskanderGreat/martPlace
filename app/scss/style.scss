@@ -586,45 +586,13 @@
 
 // recover start
 .recover {
-
   &__box {
     padding: 70px 0 120px;
     background-color: $sup-color-10;
   }
 
-  &-form {
-    max-width: 555px;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    border-radius: 4px;
-    background-color: $sup-color-8;
-
-    &__text {
-      padding: 60px 50px 30px;
-      border-bottom: 1px solid#e8ebf0;
-    }
-
-    &__bottom {
-      display: flex;
-      flex-direction: column;
-      padding: 40px 50px 60px;
-    }
-
-    &__input-mail-label {
-      margin-bottom: 15px;
-      color: $sup-color-1;
-      font-weight: 500;
-    }
-
-    &__input-mail {
-      margin-bottom: 32px;
-      padding: 17px 21px;
-      background-color: #f4f5f8;
-    }
-
-    &__btn {
-      margin: 0 auto 32px 0;
-    }
+  &__btn {
+    margin-bottom: 0;
   }
 }
 
@@ -666,70 +634,6 @@
     padding: 70px 120px;
     background-color: $sup-color-10;
   }
-
-  &-form {
-    max-width: 555px;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    border-radius: 4px;
-    background-color: $sup-color-8;
-
-    &__top {
-      padding: 60px 0 30px;
-      text-align: center;
-      border-bottom: 1px solid #e8ebf0;
-    }
-
-    &__title {
-      margin-bottom: 26px;
-      color: $sup-color-1;
-      font-size: 26px;
-      font-weight: 400;
-    }
-
-    &__bottom {
-      display: flex;
-      flex-direction: column;
-      padding: 30px 50px 60px;
-    }
-
-    &__input-mail-label,
-    &__input-password-label {
-      margin-bottom: 15px;
-      color: $sup-color-1;
-      font-weight: 500;
-    }
-
-    &__input-mail,
-    &__input-password {
-      margin-bottom: 30px;
-      padding: 18px 21px;
-      color: #898f96;
-      background-color: #f4f5f8;
-    }
-
-    &__checkbox {
-      margin-right: 15px;
-    }
-
-    &__btn {
-      margin: 33px auto 40px 0;
-    }
-
-    &__recovery {
-      display: flex;
-      justify-content: space-between;
-      color: #898f96;
-
-      &-link {
-        color: $decor-color;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
 }
 
 // login end
@@ -748,7 +652,6 @@
   }
 
   &__item {
-    // padding-bottom: 40px;
     background-color: $sup-color-8;
 
     &-title {
