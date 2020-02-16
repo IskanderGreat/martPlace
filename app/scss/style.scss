@@ -698,7 +698,6 @@
 
 // login start
 .login {
-
   &__box {
     padding: 70px 120px;
     background-color: $sup-color-10;
@@ -757,6 +756,7 @@
       display: flex;
       justify-content: space-between;
       color: #898f96;
+
       &-link {
         color: $decor-color;
 
@@ -769,3 +769,34 @@
 }
 
 // login end
+
+
+
+/////////////////////////////////////////////
+////////////// terms.html //////////////////
+////////////////////////////////////////////
+
+// terms start
+.terms {
+  &__inner {
+    padding: 60px 0 120px;
+    background-color: $sup-color-10;  
+  }
+
+  &__item {
+    // padding-bottom: 40px;
+    background-color: $sup-color-8;
+
+    &-title {
+      color: $sup-color-1;
+      font-size: 24px;
+      padding: 30px 30px 30px;
+      border-bottom: 1px solid  #e8ebf0;
+    }
+
+    &-text {
+      padding: 30px 40px  20px 30px;
+    }
+  }
+}
+// terms end
