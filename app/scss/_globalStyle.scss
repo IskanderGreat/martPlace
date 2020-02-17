@@ -8,7 +8,10 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: none;
 }
+
+
 
 a {
   display: inline-block;
@@ -227,6 +230,14 @@ body {
     font-size: 30px;
     font-weight: 500;
   }
+
+  &__search-form {
+    max-width: 555px;
+    
+    .magnifier-form {
+      border: none;
+    }
+  }
 }
 // breadcrumb end
 
@@ -334,3 +345,173 @@ body {
   }
 }
 // form end
+
+
+
+
+// search-form start
+.magnifier-form {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #d9dfe5;
+  border-radius: 23px;
+
+  &__input {
+    width: 100%;
+    padding: 15px 130px 15px 20px;
+    border-radius: 23px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 27px;
+    height: 100%;
+    background-color: $decor-color;
+    border-radius: 23px;
+    color: $sup-color-8;
+    transition: all .3s;
+
+    &:hover {
+      color: $sup-color-1;
+    }
+  }
+}
+// search-form end
+
+
+// pagination start
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    padding: 12px 23px;
+    border-radius: 19px;
+    background-color: $sup-color-8;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $decor-color;
+    }
+
+    &-arrow {
+      padding: 13px 17px;
+      margin: 0 20px;
+      font-family: 'Linearicons-Free';
+
+      &_prev {
+        &::before {
+          content: "\e879";
+        }
+      }
+
+      &_next {
+        &::before {
+          content: "\e87a";
+        }
+      }
+
+      &:hover {
+        background-color: $sup-color-3;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    li + li {
+      margin-left: 5px;
+    }
+  }
+}
+// pagination end
+
+
+
+// filter-bar start
+.filter-bar {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  color: #747b86;
+  font-size: 14px;
+  font-weight: 400;
+
+  &__favorites {
+    color: $sup-color-1;
+    font-size: 24px;
+
+    &-num {
+      font-weight: 500;
+    }
+  }
+
+  &__chevron {
+    position: relative;
+
+    &::after {
+      content: "\e874";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-family: 'Linearicons-Free';
+      font-size: 10px;
+    }
+
+    &.filter-bar__chevron_active::after {
+      content: "\e873";
+    }
+  }
+
+  &__filter {
+    font-size: 18px;
+
+    &-list {
+      height: 100%;
+      padding: 42px 30px;
+      border-right: 1px solid #eceff2;
+      border-left: 1px solid #eceff2;
+    }
+
+    &-item {
+      padding-right: 10px;
+    }
+  }
+
+  &__list {
+    padding: 15px 85px 15px 20px;
+    border: 1px solid #eceff2;
+  }
+
+  &__price,
+  &__items {
+    &::after {
+      right: 20px;
+    }
+
+  }
+
+  &__btn-list {
+    padding: 11px 21px;
+    border: 1px solid #eceff2;
+  }
+
+  &__btn {
+    svg {
+      fill: #747b86;
+    }
+
+    &.filter-bar__btn_active {
+      svg {
+        fill: $decor-color;
+      }
+    }
+  }
+
+}
+// filter-bar end

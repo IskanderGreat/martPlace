@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <a href="login.html">a</a>
+    <a href="pricing.html">a</a>
     <!-- header start -->
     <header class="header">
     <div class="header__top">
         <div class="container">
             <div class="header__top-inner">
-                <a href="#" class="header__top-logo logo">
+                <a href="index.html" class="header__top-logo logo">
                     <img src="img/header/logo.png" alt="logo">
                     <span class="logo__start-line">Mart</span>
                     <span class="logo__end-line">Place</span>
@@ -65,10 +65,12 @@
                     </ul>
                 </nav>
 
-                <form action="#" class="header-search-form">
-                    <input type="text" placeholder="Search product" class="header-search-form__input">
-                    <button class="header-search-form__btn" type="submit"></button>
-                </form>
+                <div class="header__bottom-search-form">
+                    <form action="#" class="header-search-form magnifier-form">
+                        <input type="text" placeholder="Search product" class="magnifier-form__input">
+                        <button class="header-search-form__btn magnifier-form__btn" type="submit"></button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -1103,9 +1105,9 @@
           <p class="footer-top__item-text text">Subscribe to get the latest news, update and offer information. Don't
             worry, we won't send spam!</p>
           <div class="footer-top__item-search">
-            <form action="#" class="footer-search-form">
-              <input type="text" placeholder="Enter email" class="footer-search-form__input">
-              <button class="footer-search-form__btn" type="submit">Submit</button>
+            <form action="#" class="magnifier-form">
+              <input type="text" placeholder="Enter email" class="magnifier-form__input">
+              <button class="magnifier-form__btn" type="submit">Submit</button>
             </form>
           </div>
           <ul class="social-networks">

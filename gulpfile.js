@@ -103,6 +103,7 @@ gulp.task('minjs', function () { //минифицируем main.js и пере�
         suffix: '.min'
         }))
         .pipe(gulp.dest('build/js'))
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('script', function() {
@@ -187,7 +188,9 @@ gulp.task('watch', function() {
     gulp.watch('app/modules/**/*.html', gulp.parallel('html'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('script'))
+    gulp.watch('app/js/main.js', gulp.parallel('minjs'))
     gulp.watch('app/modules/**/*.js', gulp.parallel('js-modules'))
+
 });
 
 //=============================================================================//

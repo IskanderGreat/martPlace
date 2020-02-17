@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header start -->
+    <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <a href="index.html" class="header__top-logo logo">
+                    <img src="img/header/logo.png" alt="logo">
+                    <span class="logo__start-line">Mart</span>
+                    <span class="logo__end-line">Place</span>
+                </a>
+                <div class="header-info-join">
+                    <a href="#" class="seller-btn">Become a Seller</a>
+                    <ul class="header-info-join__list-buttons">
+                        <li>
+                            <a href="#" class="header-info-join__link header-info-join__link_alarm">
+                                <span class="header-info-join__link-badge header-info-join__link-badge_alarm">25</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-info-join__link header-info-join__link_envelope">
+                                <span class="header-info-join__link-badge header-info-join__link-badge_envelope">6</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-info-join__link header-info-join__link_cart">
+                                <span class="header-info-join__link-badge header-info-join__link-badge_cart">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="user">
+                        <a href="#" class="user__avatar"></a>
+                        <div class="user__box">
+                            <a href="#" class="user__name">Taofiq Hakim</a>
+                            <a href="#" class="user__money">$20.45</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__bottom-inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="#" class="menu__link">HOME</a></li>
+                        <li><a href="#" class="menu__link">all products</a></li>
+                        <li><a href="#" class="menu__link">wordpress</a></li>
+                        <li><a href="#" class="menu__link">festures</a></li>
+                        <li><a href="#" class="menu__link">Pages</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__bottom-search-form">
+                    <form action="#" class="header-search-form magnifier-form">
+                        <input type="text" placeholder="Search product" class="magnifier-form__input">
+                        <button class="header-search-form__btn magnifier-form__btn" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- header end -->
+    <div class="content">
+      <section class="breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb__active">Favorites</li>
+          </ul>
+          <div class="breadcrumb__title">Your Favorites</div>
+        </div>
+      </section>
+
+      <section class="favorites">
+        <div class="favorites__top">
+          <div class="container">
+            <div class="filter-bar">
+              <div class="filter-bar__favorites"><span class="filter-bar__favorites-num">570 </span>Favourites Found</div>
+              <div class="filter-bar__filter filter-bar__chevron">
+                <select name="filter-bar-select" class="filter-bar__filter-list">
+                  <option value="filter by" class="filter-bar__filter-item">filter by</option>
+                  <option value="filter by" class="filter-bar__filter-item">filter by</option>
+                  <option value="filter by" class="filter-bar__filter-item">filter by</option>
+                </select>
+              </div>
+              <div class="filter-bar__price filter-bar__chevron">
+                <select name="filter-bar__price-list" class="filter-bar__list filter-bar__price-list">
+                  <option value="filter by" class="filter-bar__price-item">Price : Low to High</option>
+                  <option value="filter by" class="filter-bar__price-item">filter by</option>
+                  <option value="filter by" class="filter-bar__price-item">filter by</option>
+                </select>
+              </div>
+              <div class="filter-bar__items filter-bar__chevron">
+                <select name="filter-bar__items-list" class="filter-bar__list filter-bar__items-list">
+                  <option value="filter by" class="filter-bar__items-item">12 Items Per Page</option>
+                  <option value="filter by" class="filter-bar__items-item">filter by</option>
+                  <option value="filter by" class="filter-bar__items-item">filter by</option>
+                </select>
+              </div>
+              <div class="filter-bar__btn-list">
+                <button class="filter-bar__btn filter-bar__btn-grid filter-bar__btn_active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path d="M10.415 12.358v1.573a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418v-1.573c0-.23.186-.418.415-.418.23 0 .415.187.415.418zm0-6.29v1.573a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418V6.068c0-.23.186-.418.415-.418.23 0 .415.187.415.418zm0 9.435v1.573a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418v-1.573c0-.231.186-.418.415-.418.23 0 .415.187.415.418zm0-12.58v1.573a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418V2.924c0-.232.186-.42.415-.42.23 0 .415.188.415.42zM4.953 10a.417.417 0 0 1-.416.418h-1.56A.417.417 0 0 1 2.56 10c0-.231.186-.419.415-.419h1.561c.23 0 .416.188.416.419zm3.121 0a.417.417 0 0 1-.415.418H6.098A.417.417 0 0 1 5.682 10c0-.231.186-.419.416-.419h1.56c.23 0 .416.188.416.419zm3.122 0a.417.417 0 0 1-.416.418h-.365v.368a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418v-.368h-.366A.417.417 0 0 1 8.804 10c0-.231.186-.419.415-.419h.366v-.368c0-.23.186-.418.415-.418.23 0 .415.187.415.418v.368h.365c.23 0 .416.188.416.419zm6.243 0a.417.417 0 0 1-.415.418h-1.561a.417.417 0 0 1-.416-.418c0-.231.186-.419.416-.419h1.56c.23 0 .416.188.416.419zm-3.122 0a.417.417 0 0 1-.415.418h-1.56a.417.417 0 0 1-.416-.418c0-.231.186-.419.415-.419h1.561c.23 0 .415.188.415.419zM19.941.514v18.971a.417.417 0 0 1-.415.418H.474a.417.417 0 0 1-.415-.418V.514c0-.231.186-.418.415-.418h19.052c.23 0 .415.187.415.418zm-.83.419h-8.696v.418a.417.417 0 0 1-.415.418.417.417 0 0 1-.415-.418V.933H.889V9.58h.527c.23 0 .415.188.415.419a.417.417 0 0 1-.415.418H.889v8.649h8.696v-.419c0-.231.186-.418.415-.418.23 0 .415.187.415.418v.419h8.695v-8.649h-.526A.417.417 0 0 1 18.17 10c0-.231.186-.419.415-.419h.526z"/></g></g></svg>
+                </button>
+                <button class="filter-bar__btn filter-bar__btn-row">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"><g><g><path d="M20.016 10.436a.29.29 0 0 1-.293.288H7.51a.29.29 0 0 1-.293-.288.29.29 0 0 1 .293-.287h12.212a.29.29 0 0 1 .293.287zm0-1.841a.29.29 0 0 1-.293.287H7.51a.29.29 0 0 1-.293-.287.29.29 0 0 1 .293-.288h12.212a.29.29 0 0 1 .293.288zM5.613 7.674v3.684a.912.912 0 0 1-.92.901H.936a.912.912 0 0 1-.92-.901V7.674c0-.497.413-.902.92-.902h3.757c.508 0 .92.404.92.902zm-.587 0a.33.33 0 0 0-.333-.327H.936a.33.33 0 0 0-.333.327v3.684c0 .18.15.326.333.326h3.757a.33.33 0 0 0 .333-.326zm14.99-3.991a.29.29 0 0 1-.293.288H7.51a.29.29 0 0 1-.293-.288.29.29 0 0 1 .293-.288h12.212a.29.29 0 0 1 .293.288zM7.218 1.84a.29.29 0 0 1 .293-.288h12.212a.29.29 0 0 1 .293.288.29.29 0 0 1-.293.288H7.51a.29.29 0 0 1-.293-.288zM5.613.92v3.684a.912.912 0 0 1-.92.902H.936a.912.912 0 0 1-.92-.902V.92c0-.497.413-.902.92-.902h3.757c.508 0 .92.405.92.902zm-.587 0a.33.33 0 0 0-.333-.326H.936A.33.33 0 0 0 .603.92v3.684c0 .18.15.326.333.326h3.757a.33.33 0 0 0 .333-.326zm14.99 16.27a.29.29 0 0 1-.293.288H7.51a.29.29 0 0 1-.293-.288.29.29 0 0 1 .293-.288h12.212a.29.29 0 0 1 .293.288zm0-1.842a.29.29 0 0 1-.293.288H7.51a.29.29 0 0 1-.293-.288.29.29 0 0 1 .293-.287h12.212a.29.29 0 0 1 .293.287zm-14.403-.92v3.683a.912.912 0 0 1-.92.902H.936a.912.912 0 0 1-.92-.902v-3.684c0-.497.413-.901.92-.901h3.757c.508 0 .92.404.92.901zm-.587 0a.33.33 0 0 0-.333-.327H.936a.33.33 0 0 0-.333.326v3.684c0 .18.15.327.333.327h3.757a.33.33 0 0 0 .333-.327z"/></g></g></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="favorites__main">
+          <div class="container">
+            <div class="favorites__main-inner">
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="favorites__main-item">
+                <div class="card">
+  <div class="card__inner card__inner_s">
+    <a href="#" class="card__link-product card__link-product_s inline-bg-style" style="background-image: url('img/product/test-img.jpg');"></a>
+    <div class="card__wrap card__wrap_s">
+      <div class="card__title card__title_s">
+        E-commerce Shopping Cart
+      </div>
+      <div class="card__box">
+        <a href="#" class="card__link-person">
+          <div class="card__avatar inline-bg-style"
+          style="background-image: url('img/product/avatars/avatar-1.jpg');"></div>
+          AazzTech
+        </a>
+        <a href="#" class="card__link-CMS">
+          <img src="img/product/icon/wp.svg" alt="cms-icon" class="card__link-CMS-icon">
+          WordPress
+        </a>
+      </div>
+      <p class="card__text card__text_s text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+        the mattis, leo quam aliquet congue.</p>
+    </div>
+    <div class="card__footer card__footer_s">
+      <ul class="card__footer-box card__footer-box_s">
+        <li><span class="card__price card__price_s">$10</span></li>
+        <li><span class="card__like card__like_s">46</span></li>
+        <li><span class="card__rating-starts"></span></li>
+      </ul>
+      <span class="card__buys">634</span>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="pagination">
+              <a href="#" class="pagination__link pagination__link-arrow pagination__link-arrow_prev"></a>
+              <ul class="pagination__list">
+                <li><a href="#" class="pagination__link">1</a></li>
+                <li><a href="#" class="pagination__link">2</a></li>
+                <li><a href="#" class="pagination__link">3</a></li>
+                <li><a href="#" class="pagination__link">...</a></li>
+                <li><a href="#" class="pagination__link">8</a></li>
+              </ul>
+              <a href="#" class="pagination__link pagination__link-arrow pagination__link-arrow_next"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- footer start -->
+    <footer class="footer">
+  <div class="footer__top footer-top">
+    <div class="container">
+      <div class="footer-top__inner">
+        <div class="footer-top__item">
+          <a href="#" class="footer-top__logo logo">
+            <img src="img/footer/logo-footer.png" alt="logo">
+            <span class="logo__start-line logo__start-line_footer">Mart</span>
+            <span class="logo__end-line">Place</span>
+          </a>
+          <p class="footer-top__item-text text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo
+            ut scel erisque the mattis, leo quam.</p>
+          <a href="tel:67898752235" class="footer-top__item-icon footer-top__item-icon_phone text">Phone:
+            +6789-875-2235</a>
+          <a href="mailto:support@aazztech.com"
+            class="footer-top__item-icon  footer-top__item-icon_mail text">support@aazztech.com</a>
+          <a href="#" class="footer-top__item-icon footer-top__item-icon_address text">202 New Hampshire Avenue
+            Northwest #100, New York-2573</a>
+        </div>
+        <div class="footer-top__item">
+          <div class="footer-top__item-title">Our Company</div>
+          <ul class="footer-top__item-list">
+            <li><a href="#" class="footer-top__item-link">About Us</a></li>
+            <li><a href="#" class="footer-top__item-link">How It Work</a></li>
+            <li><a href="#" class="footer-top__item-link">Affiliates</a></li>
+            <li><a href="#" class="footer-top__item-link">Testimonials</a></li>
+            <li><a href="contacts.html" class="footer-top__item-link">Contact Us</a></li>
+            <li><a href="#" class="footer-top__item-link">Copyright Notice</a></li>
+            <li><a href="#" class="footer-top__item-link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <div class="footer-top__item-title">Help Support</div>
+          <ul class="footer-top__item-list">
+            <li><a href="#" class="footer-top__item-link">Support Forum</a></li>
+            <li><a href="#" class="footer-top__item-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-top__item-link">Support Policy</a></li>
+            <li><a href="#" class="footer-top__item-link">Refund Policy</a></li>
+            <li><a href="#" class="footer-top__item-link">FAQs</a></li>
+            <li><a href="#" class="footer-top__item-link">Buyers Faq</a></li>
+            <li><a href="#" class="footer-top__item-link">Sellers Faq</a></li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <div class="footer-top__item-title">Newsletter</div>
+          <p class="footer-top__item-text text">Subscribe to get the latest news, update and offer information. Don't
+            worry, we won't send spam!</p>
+          <div class="footer-top__item-search">
+            <form action="#" class="magnifier-form">
+              <input type="text" placeholder="Enter email" class="magnifier-form__input">
+              <button class="magnifier-form__btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <ul class="social-networks">
+            <li><a href="#" class="social-networks__link social-networks__link_facebook"></a></li>
+            <li><a href="#" class="social-networks__link social-networks__link_twitter"></a></li>
+            <li><a href="#" class="social-networks__link social-networks__link_google"></a></li>
+            <li><a href="#" class="social-networks__link social-networks__link_pinterest"></a></li>
+            <li><a href="#" class="social-networks__link social-networks__link_linkedin"></a></li>
+            <li><a href="#" class="social-networks__link social-networks__link_dribbble"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copywrite">
+    ©2017 <a href="#" class="footer__copywrite-link">MartPlace</a>. All rights reserved. Created by <a href="#"
+      class="footer__copywrite-link">AazzTech</a>
+  </div>
+</footer>
+    <!-- footer end -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/modules.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
