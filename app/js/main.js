@@ -36,4 +36,15 @@ $(function() {
     starWidth: '16px'
   });
   // single-buy end
+
+  // single-tabs start
+  $(".js-single-tabs .js-single-tabs__tab").click(function(event){
+    var id = $(this).attr("data-id");
+    $(".js-single-tabs").find(".js-single-tabs__content-item").removeClass("js-single-tabs__content-item_active").hide();
+    $(".js-single-tabs__list").find(".js-single-tabs__tab").removeClass("js-single-tabs__tab_active, single-tabs__tab_active");
+    $(this).addClass("single-tabs__tab_active");
+    $("#"+id).addClass("js-single-tabs__content-item_active").fadeIn();
+    return false;
+  });
+  // single-tabs-end
 }); 
