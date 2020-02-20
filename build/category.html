@@ -56,7 +56,7 @@
             <div class="header__bottom-inner">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li><a href="#" class="menu__link">HOME</a></li>
+                        <li><a href="index.html" class="menu__link">HOME</a></li>
                         <li><a href="#" class="menu__link">all products</a></li>
                         <li><a href="#" class="menu__link">wordpress</a></li>
                         <li><a href="#" class="menu__link">festures</a></li>
@@ -76,16 +76,16 @@
 </header>
     <!-- header end -->
     <div class="content">
-      <section class="breadcrumb category-breadcrumb">
+      <section class="breadcrumb breadcrumb-category">
         <div class="container">
-          <div class="breadcrumb__title category-breadcrumb__title">4,572 wordpress themes, made with love</div>
-          <div class="breadcrumb__search-form category-breadcrumb__search-form">
+          <div class="breadcrumb__title breadcrumb-category__title">4,572 <span>wordpress themes, made with love</span></div>
+          <div class="breadcrumb__search-form breadcrumb-category__search-form">
             <form action="#" class="magnifier-form">
               <input type="text" placeholder="Search product" class="magnifier-form__input">
               <button class="magnifier-form__btn" type="submit">Search</button>
             </form>
           </div>
-          <ul class="breadcrumb__list category-breadcrumb__list">
+          <ul class="breadcrumb__list breadcrumb-category__list">
             <li><a href="index.html">Home</a></li>
             <li class="breadcrumb__active">Category Page Grid</li>
           </ul>
@@ -99,12 +99,130 @@
           </div>
         </div>
 
-        <div class="category__wrap">
-          <aside class="category__aside">
+        <div class="container">
+          <div class="category__wrap">
+            <aside class="category__wrap-item category__aside">
+              <ul class="category-list">
+                <li class="category-list__item">
+                  <div class="category-list__item-title lnr lnr-chevron-down js-category-list__item-title">
+                    Categories
+                  </div>
+                  <ul class="category-list__item-list">
+                    <li><a class="active" href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Wordpress</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Landing Page</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Psd Template</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Plugins</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>HTML Template</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Components</a><span>1</span></li>
+                    <li><a href="#"><span class="category-list__item-chevron lnr lnr-chevron-right"></span>Joomla Template</a><span>1</span></li>
+                  </ul>
+                </li>
+  
+                <li class="category-list__item">
+                  <div class="category-list__item-title lnr lnr-chevron-down js-category-list__item-title">
+                    Filter Products
+                  </div>
+                  <ul class="category-list__item-list">
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">Trending Products</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">Popular Products</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">New Products</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">Best Seller</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">Best Rating</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">Low Price</a></li>
+                    <li class="category-list__item-circle-icon circle-icon"><a href="#">High Price</a></li>
+                  </ul>
+                </li>
 
-          </aside>
-          <div class="category__inner">
-            <div class="category__item">
+                <li class="category-list__item">
+                  <div class="category-list__item-title lnr lnr-chevron-down js-category-list__item-title">
+                    Filter Products
+                  </div>
+                  <form action="#" class="pricing-range">
+                    <input type="text" class="js-pricing-range__slider pricing-range__slider">
+                    <button type="submit" class="pricing-range__btn btn btn_figure_elipse btn_color_w btn_bg_b">Search Update</button>
+                  </form>
+
+                </li>
+              </ul>
+            </aside>
+            <div class="category__wrap-item category__product">
+              <button class="button-1">list</button>
+              <button class="button-2">grid</button>
+              <div class="category__product-item">
+                <div class="ticket">
+  <div class="ticket__inner">
+    <div class="ticket__item">
+      <div class="ticket-img inline-bg-style" style="background-image: url(img/test-img.jpg);">
+
+      </div>
+    </div>
+
+    <div class="ticket__item">
+      <div class="ticket-desc">
+        <div class="ticket-desc__title">
+          Finance and Consulting Business Theme
+        </div>
+        <div class="ticket-desc__box-1">
+          <!-- Включается при large -->
+          <p class="ticket-desc__text text">Nunc placerat mi id nisi inter dum mollis. Praesent phare...</p>
+          <!--  -->
+
+          <!-- Отключается при large -->
+          <div class="ticket-user">
+            <div class="ticket-user__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);"></div>
+            <a href="#" class="ticket-user__name">Theme-Valley</a>
+          </div>
+          <!--  -->
+
+        </div>
+        <div class="ticket-desc__box-2">
+          <!-- Отключается при large -->
+          <div class="ticket-rating">
+            <span class="ticket-rating__star js-ticket-rating__star"></span>
+            <span class="ticket-cart lnr lnr-cart">427</span>
+          </div>
+          <!--  -->
+
+          <a href="#" class="ticket-link-product">Wordpress</a>
+        </div>
+      </div>
+    </div>
+    <!-- Включен только при large -->
+    <div class="ticket__item ticket__item_large">
+      <div class="ticket-info">
+        <div class="ticket-user">
+          <div class="ticket-user__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);"></div>
+          <a href="#" class="ticket-user__name">Theme-Valley</a>
+        </div>
+
+        <div class="ticket-info__comment lnr lnr-heart">
+          <span>90 loves</span>
+        </div>
+        <div class="ticket-info__like lnr lnr-bubble">
+          <span>90 Comments</span>
+        </div>
+
+        <div class="ticket-rating">
+          <span class="ticket-rating__star js-ticket-rating__star"></span>
+          <span>(34)</span>
+        </div>
+      </div>
+
+    </div>
+    <!--  -->
+
+    <div class="ticket__item">
+      <div class="ticket-price">
+        <span class="ticket-money">$18</span>
+        <span class="ticket-cart lnr lnr-cart">427</span>
+
+        <!-- Отключается при large -->
+        <a href="#" class="ticket-link-product">Wordpress</a>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
             </div>
           </div>
         </div>

@@ -595,3 +595,21 @@ body {
   }
 }
 // social-networks end
+
+
+// circle-icon start
+.circle-icon {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #747b86;
+    border-radius: 50%;
+  }
+}
+// circle-icon end

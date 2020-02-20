@@ -47,4 +47,36 @@ $(function() {
     return false;
   });
   // single-tabs-end
+
+  // category-list start
+  $(".js-category-list__item-title").click(function() {
+    $(this).next().slideToggle(300);
+    $(this).toggleClass("lnr-chevron-up");
+    $(this).toggleClass("lnr-chevron-down");
+  });
+  // category-list end 
+
+  // pricing-range__slider start
+  $(".js-pricing-range__slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 350,
+    from: 30,
+    to: 300,
+    hide_min_max: true,
+    prefix: "$",
+  });
+  // pricing-range__slider end
+
+  // 
+  $(".button-1").click(function() {
+    $(".ticket").addClass("ticket-large");
+
+  });
+
+  $(".button-2").click(function() {
+    $(".ticket").removeClass("ticket-large");
+
+  });
+  // 
 }); 

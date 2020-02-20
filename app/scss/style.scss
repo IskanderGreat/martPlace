@@ -18,6 +18,7 @@
 @import "../modules/reviews/reviews.scss";
 @import "../modules/news-item/news-item.scss";
 @import "../modules/footer/footer.scss";
+@import "../modules/ticket/ticket.scss";
 
 
 /////////////////////////////////////////////
@@ -865,26 +866,172 @@
 ////////////// category.html ///////////////
 ////////////////////////////////////////////
 
+.breadcrumb-category {
+  padding: 87px 0 30px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 26px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__list {
+    justify-content: center;
+  }
+
+  &__search-form {
+    margin: 0 auto 37px;
+  }
+}
+
 // category start
 .category {
-  &-breadcrumb {
-    padding: 87px 0 30px;
-    text-align: center;
+  padding: 80px 0 120px;
+  background-color: #eff1f5;
 
-    &__title {
-      margin-bottom: 32px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+
+    &-item {
+      margin: 0 15px;
     }
+  }
 
-    &__list {
-      justify-content: center;
-    }
+  &__product {
+    max-width: 853px;
+    width: 100%;
+  }
 
-    &__search-form {
-      margin: 0 auto 37px;
+  &__aside {
+    max-width: 263px;
+    width: 100%;
+  }
+
+  &-list {
+    &__item {
+      margin-bottom: 30px;
+      padding: 30px;
+      box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+      border-radius: 4px;
+      background-color: $sup-color-8;
+
+      &-title {
+        position: relative;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e7ebee;
+        font-size: 20px;
+        cursor: pointer;
+
+        &::before {
+          position: absolute;
+          right: 0;
+          top: 15%;
+          color: #555555;
+          font-size: 12px;
+        }
+      }
+
+      &-list {
+        padding-top: 25px;
+        color: #747b86;
+        font-size: 15px;
+        line-height: 36px;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+
+          a.active {
+            color: $decor-color;
+          }
+        }
+      }
+
+      &-chevron {
+        font-size: 10px;
+        margin-right: 13px;
+      }
+
+      &-circle-icon {
+        position: relative;
+        padding-left: 21px;
+      }
     }
   }
 }
 // category end
+
+// pricing-range__slider start
+.pricing-range {
+  text-align: center;
+  .irs {
+    position: relative;
+    margin: 10px 0 88px;
+  }
+
+  .irs-handle {
+    &::before {
+      content: "";
+      top: -3px;
+      left: 0;
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: $sup-color-8;
+      border: 4px solid $decor-color;
+      border-radius: 50%;
+    }
+    i {
+      display: none !important;
+    }
+  }
+
+  .irs-line {
+    height: 6px;
+  }
+
+  .irs-bar {
+    height: 6px;
+    background-color: $sup-color-3;
+  }
+
+  .irs-from,
+  .irs-to {
+    position: absolute;
+    top: 50px;
+    padding: 9px 20px;
+    background-color: #f1edf9;
+    color: $sup-color-3;
+    font-size: 15px;
+    border-radius: 19px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .irs-single {
+    position: absolute;
+    top: -5px;
+    padding: 2px 10px;
+    background-color: #f1edf9;
+    color: $sup-color-3;
+    font-size: 12px;
+    border-radius: 19px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+// pricing-range__slider end
 
 
 
