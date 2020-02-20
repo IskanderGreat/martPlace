@@ -904,8 +904,15 @@
   }
 
   &__product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 853px;
     width: 100%;
+
+    &-item {
+      margin-bottom: 30px;
+    }
   }
 
   &__aside {
