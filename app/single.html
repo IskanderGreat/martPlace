@@ -67,7 +67,7 @@
 
                 <ul class="single-tabs__content">
                   <li
-                    class="single-tabs__content-item tab-item single-tabs__content-item_active js-single-tabs__content-item js-single-tabs__content-item_active"
+                    class="single-tabs__content-item tab-item js-single-tabs__content-item js-single-tabs__content-item_active"
                     id="tab-1">
                     <div class="tab-item__row">
                       <div class="tab-item__row-title">Landing Page Details</div>
@@ -155,7 +155,7 @@
                     </div>
                   </li>
                   <li
-                    class="single-tabs__content-item tab-item single-tabs__content-item_active js-single-tabs__content-item js-single-tabs__content-item_active"
+                    class="single-tabs__content-item tab-item js-single-tabs__content-item js-single-tabs__content-item_active"
                     id="tab-3">
                     <div class="tab-item__row">
                       <div class="tab-item__row-title">Landing Page Details</div>
@@ -199,7 +199,7 @@
                     </div>
                   </li>
                   <li
-                    class="single-tabs__content-item tab-item single-tabs__content-item_active js-single-tabs__content-item js-single-tabs__content-item_active"
+                    class="single-tabs__content-item tab-item js-single-tabs__content-item js-single-tabs__content-item_active"
                     id="tab-4">
                     <div class="tab-item__row">
                       <div class="tab-item__row-title">Landing Page Details</div>
@@ -243,7 +243,7 @@
                     </div>
                   </li>
                   <li
-                    class="single-tabs__content-item tab-item single-tabs__content-item_active js-single-tabs__content-item js-single-tabs__content-item_active"
+                    class="single-tabs__content-item tab-item js-single-tabs__content-item js-single-tabs__content-item_active"
                     id="tab-5">
                     <div class="tab-item__row">
                       <div class="tab-item__row-title">Landing Page Details</div>
@@ -259,21 +259,24 @@
               </div>
             </div>
             <aside class="single__aside">
-              <form class="single__aside-item single-buy">
+              <form class="single__aside-item single-buy form">
                 <div class="single-buy__price"><span>$</span>60.00</div>
                 <div class="single-buy__box">
                   <ul class="single-buy__list">
                     <li>
-                      <input name="license" type="radio" value="1"
-                        class="single-buy__radio single-buy__radio_1 js-active-radio" checked>
-                      <label for="single-buy__radio_1">Single User License</label>
-                      <p class="single-buy__description text">Nunc placerat mi id nisi interdum is mollis. Praesent
+                      <label class="form__bottom-label">
+                        <input name="license" type="radio" class="form__bottom-checkbox js-radio js-radio-active" checked>
+                        <span class="form__bottom-text-checkbox">Single User License</span>
+                      </label>
+                      <p class="single-buy__description text see">Nunc placerat mi id nisi interdum is mollis. Praesent
                         pharetra, justo ut sceleris que the mattis, leo quam.</p>
                     </li>
                     <li>
-                      <input name="license" type="radio" value="2" class="single-buy__radio single-buy__radio_2">
-                      <label for="single-buy__radio_2">Multi User License</label>
-                      <p class="single-buy__description text hide">Nunc placerat mi id nisi interdum is mollis. Praesent
+                      <label class="form__bottom-label">
+                        <input name="license" type="radio" class="form__bottom-checkbox js-radio">
+                        <span class="form__bottom-text-checkbox">Single User License</span>
+                      </label>
+                      <p class="single-buy__description text">Nunc placerat mi id nisi interdum is mollis. Praesent
                         pharetra, justo ut sceleris que the mattis, leo quam.</p>
                     </li>
                   </ul>
@@ -408,7 +411,7 @@
       <section class="banner">
         <div class="banner__title">Ready to Join Our Marketplace!</div>
         <p class="banner__text">Over 25,000 designers and developers trust the MartPlace.</p>
-        <a href="#" class="banner__btn btn btn_figure_elipse">Join Us Today</a>
+        <a href="#" class="banner__btn btn btn_figure_elipse btn_bg_w btn_color_b">Join Us Today</a>
       </section>
     </div>
     <!-- footer start -->

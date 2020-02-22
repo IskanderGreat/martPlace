@@ -26,6 +26,7 @@
 
 .lnr {
 	&::before {
+		position: absolute;
 		font-family: 'Linearicons-Free';
 		speak: none;
 		font-style: normal;
@@ -62,4 +63,49 @@
 
 .lnr-chevron-down:before {
 	content: "\e874";
+}
+
+.lnr-magnifier:before {
+	content: "\e86f";
+}
+
+.lnr-clock:before {
+	content: "\e864";
+}
+.lnr-user:before {
+	content: "\e82a";
+}
+.lnr-home:before {
+	content: "\e800";
+}
+.lnr-cog:before {
+	content: "\e810";
+}
+.lnr-dice:before {
+	content: "\e812";
+}
+.lnr-chart-bars:before {
+	content: "\e843";
+}
+.lnr-upload:before {
+	content: "\e866";
+}
+.lnr-book:before {
+	content: "\e828";
+}
+.lnr-briefcase:before {
+	content: "\e84c";
+}
+.lnr-exit:before {
+	content: "\e820";
+}
+.lnr-alarm:before {
+	content: "\e858";
+}
+.lnr-envelope:before {
+	content: "\e818";
+}
+
+.lnr-trash:before {
+	content: "\e811";
 }

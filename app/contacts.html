@@ -57,16 +57,16 @@
               <div class="form__bottom-inner contacts-form__bottom-inner">
                 <input type="text" class="contacts-form__bottom-input form__bottom-input form__bottom-input_name"
                   placeholder="Name">
-                <input type="text" class="contacts-form__bottom-input form__bottom-input form__bottom-input_email"
+                <input type="email" class="contacts-form__bottom-input form__bottom-input form__bottom-input_email"
                   placeholder="Email">
                 <input type="text" class="contacts-form__bottom-input form__bottom-input form__bottom-input_subject"
                   placeholder="Subject">
-                <input type="text" class="contacts-form__bottom-input form__bottom-input form__bottom-input_phone"
+                <input type="number" class="contacts-form__bottom-input form__bottom-input form__bottom-input_phone"
                   placeholder="Phone">
+                <textarea name="comment" class="contacts-form__bottom-comment form__bottom-comment"
+                  placeholder="Your text here..." inputmode="latin">
+                </textarea>
               </div>
-              <textarea name="comment" cols="30" rows="8" class="contacts-form__bottom-comment form__bottom-comment"
-                placeholder="Your text here...">
-            </textarea>
             </div>
             <button type="submit" class="form__btn btn btn_figure_elipse btn_bg_b btn_color_w">Send Request</button>
           </form>
@@ -74,7 +74,9 @@
       </section>
 
       <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1a76a709c69cead6561a43a9e6d78d8d83a58455ea7e2dbb0bb298c473ac024&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1a76a709c69cead6561a43a9e6d78d8d83a58455ea7e2dbb0bb298c473ac024&amp;source=constructor"
+          width="100%" height="400" frameborder="0"></iframe>
       </section>
     </div>
     <!-- footer start -->

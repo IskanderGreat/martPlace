@@ -13,66 +13,357 @@
   <div class="wrapper">
     <!-- header start -->
     <header class="header">
-    <div class="header__top">
-        <div class="container">
-            <div class="header__top-inner">
-                <a href="index.html" class="header__top-logo logo">
-                    <img src="img/header/logo.png" alt="logo">
-                    <span class="logo__start-line">Mart</span>
-                    <span class="logo__end-line">Place</span>
-                </a>
-                <div class="header-info-join">
-                    <a href="#" class="seller-btn">Become a Seller</a>
-                    <ul class="header-info-join__list-buttons">
-                        <li>
-                            <a href="#" class="header-info-join__link header-info-join__link_alarm">
-                                <span class="header-info-join__link-badge header-info-join__link-badge_alarm">25</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="header-info-join__link header-info-join__link_envelope">
-                                <span class="header-info-join__link-badge header-info-join__link-badge_envelope">6</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="header-info-join__link header-info-join__link_cart">
-                                <span class="header-info-join__link-badge header-info-join__link-badge_cart">2</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="user">
-                        <a href="#" class="user__avatar"></a>
-                        <div class="user__box">
-                            <a href="#" class="user__name">Taofiq Hakim</a>
-                            <a href="#" class="user__money">$20.45</a>
-                        </div>
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a href="index.html" class="header__top-logo logo">
+          <img src="img/header/logo.png" alt="logo">
+          <span class="logo__start-line">Mart</span>
+          <span class="logo__end-line">Place</span>
+        </a>
+        <div class="header-info-join">
+          <a href="#" class="seller-btn">Become a Seller</a>
+          <ul class="basket-menu">
+            <li class="basket-menu__item">
+              <a href="#" class="basket-menu__link lnr lnr-alarm"><span
+                  class="link-badge link-badge_alarm">11</span></a>
+              <div class="dropdown alarm-dropdown">
+                <div class="alarm-dropdown__title">
+                  My Notifications
+                  <a href="#" class="alarm-dropdown__title-link">View All</a>
+                </div>
+                <ul class="alarm-dropdown__list">
+                  <li class="alarm-dropdown__item">
+                    <div class="notification">
+                      <div class="notification__avatar inline-bg-style"
+                        style="background-image: url(img/test-img.jpg);"></div>
+                      <div class="notification__wrap">
+                        <div class="notification__name">Anderson <span>added to Favourite</span></div>
+                        <a href="#" class="notification__product">Marketify Coffee Shop</a>
+                        <div class="notification__date">Just now</div>
+                      </div>
+                      <div class="notification__icon notification__icon_heart lnr lnr-heart"></div>
                     </div>
+                  </li>
+                  <li class="alarm-dropdown__item">
+                    <div class="notification">
+                      <div class="notification__avatar inline-bg-style"
+                        style="background-image: url(img/test-img.jpg);"></div>
+                      <div class="notification__wrap">
+                        <div class="notification__name">Anderson <span>added to Favourite</span></div>
+                        <a href="#" class="notification__product">Marketify Coffee Shop</a>
+                        <div class="notification__date">Just now</div>
+                      </div>
+                      <div class="notification__icon notification__icon_heart lnr lnr-heart"></div>
+                    </div>
+                  </li>
+                  <li class="alarm-dropdown__item">
+                    <div class="notification">
+                      <div class="notification__avatar inline-bg-style"
+                        style="background-image: url(img/test-img.jpg);"></div>
+                      <div class="notification__wrap">
+                        <div class="notification__name">Anderson <span>added to Favourite</span></div>
+                        <a href="#" class="notification__product">Marketify Coffee Shop</a>
+                        <div class="notification__date">Just now</div>
+                      </div>
+                      <div class="notification__icon notification__icon_heart lnr lnr-heart"></div>
+                    </div>
+                  </li>
+                  <li class="alarm-dropdown__item">
+                    <div class="notification">
+                      <div class="notification__avatar inline-bg-style"
+                        style="background-image: url(img/test-img.jpg);"></div>
+                      <div class="notification__wrap">
+                        <div class="notification__name">Anderson <span>added to Favourite</span></div>
+                        <a href="#" class="notification__product">Marketify Coffee Shop</a>
+                        <div class="notification__date">Just now</div>
+                      </div>
+                      <div class="notification__icon notification__icon_heart lnr lnr-heart"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="basket-menu__item">
+              <a href="#" class="basket-menu__link lnr lnr-envelope"><span
+                  class="link-badge link-badge_envelope">6</span></a>
+              <div class="dropdown envelope-dropdown">
+                <div class="envelope-dropdown__title">
+                  My Messages
+                  <a href="#" class="envelope-dropdown__title-link">View All</a>
                 </div>
+                <ul class="envelope-dropdown__list">
+                  <li class="envelope-dropdown__item">
+                    <a href="#" class="message">
+                      <div class="message__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="message__box">
+                        <div class="message__wrap">
+                          <div class="message__name lnr lnr-envelope">Washim</div>
+                          <div class="message__date">Just now</div>
+                        </div>
+                        <div class="message__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="envelope-dropdown__item">
+                    <a href="#" class="message">
+                      <div class="message__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="message__box">
+                        <div class="message__wrap">
+                          <div class="message__name lnr lnr-envelope">Washim</div>
+                          <div class="message__date">Just now</div>
+                        </div>
+                        <div class="message__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="envelope-dropdown__item">
+                    <a href="#" class="message">
+                      <div class="message__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="message__box">
+                        <div class="message__wrap">
+                          <div class="message__name lnr lnr-envelope message__name_checked">Washim</div>
+                          <div class="message__date message__date_checked">Just now</div>
+                        </div>
+                        <div class="message__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="envelope-dropdown__item">
+                    <a href="#" class="message">
+                      <div class="message__avatar inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="message__box">
+                        <div class="message__wrap">
+                          <div class="message__name lnr lnr-envelope">Washim</div>
+                          <div class="message__date">Just now</div>
+                        </div>
+                        <div class="message__text">Hello John Smith! Nunc placerat id...</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="basket-menu__item">
+              <a href="#" class="basket-menu__link lnr lnr-cart"><span class="link-badge link-badge_cart">2</span></a>
+              <div class="dropdown cart-dropdown">
+                <ul class="cart-dropdown__list">
+                  <li class="cart-dropdown__item">
+                    <div class="cart-item">
+                      <div class="cart-item__img inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="cart-item__wrap">
+                        <div class="cart-item__title">Finance and Consulting Business Theme</div>
+                        <div class="cart-item__product">Wordpress</div>
+                      </div>
+                      <div class="cart-item__box">
+                        <div class="cart-item__del lnr lnr-trash"></div>
+                        <div class="cart-item__price">$60</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart-dropdown__item">
+                    <div class="cart-item">
+                      <div class="cart-item__img inline-bg-style" style="background-image: url(img/test-img.jpg);">
+                      </div>
+                      <div class="cart-item__wrap">
+                        <div class="cart-item__title">Finance and Consulting Business Theme</div>
+                        <div class="cart-item__product">Wordpress</div>
+                      </div>
+                      <div class="cart-item__box">
+                        <div class="cart-item__del lnr lnr-trash"></div>
+                        <div class="cart-item__price">$60</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart-dropdown__total">
+                  <span>Total :</span>
+                  <span>$80</span>
+                </div>
+                <ul class="cart-dropdown__list-btn">
+                  <li><a href="#" class="cart-dropdown__link btn btn_bg_p btn_color_w">Go to
+                      Cart</a></li>
+                  <li><a href="#" class="cart-dropdown__link btn btn_bg_b btn_color_w">Go to
+                      Checkout</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="user">
+            <div class="user__wrap">
+              <a href="#" class="user__avatar"></a>
+              <div class="user__box">
+                <a href="#" class="user__name">Taofiq Hakim</a>
+                <a href="#" class="user__money">$20.45</a>
+              </div>
             </div>
+            <ul class="dropdown user-dropdown">
+              <li><a class="lnr lnr-user" href="#">Profile Page</a></li>
+              <li><a class="lnr lnr-home" href="#">Dashboard</a></li>
+              <li><a class="lnr lnr-cog" href="#">Account Settings</a></li>
+              <li><a class="lnr lnr-cart" href="#">Your Purchases</a></li>
+              <li><a class="lnr lnr-heart" href="#">Your Favorites</a></li>
+              <li><a class="lnr lnr-dice" href="#">Add Credits</a></li>
+              <li><a class="lnr lnr-chart-bars" href="#">Sales Statements</a></li>
+              <li><a class="lnr lnr-upload" href="#">Upload Item</a></li>
+              <li><a class="lnr lnr-book" href="#">Edit Item</a></li>
+              <li><a class="lnr lnr-briefcase" href="#">Withdrawals</a></li>
+              <li><a class="lnr lnr-exit" href="#">Logout</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="header__bottom">
-        <div class="container">
-            <div class="header__bottom-inner">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li><a href="index.html" class="menu__link">HOME</a></li>
-                        <li><a href="#" class="menu__link">all products</a></li>
-                        <li><a href="#" class="menu__link">wordpress</a></li>
-                        <li><a href="#" class="menu__link">festures</a></li>
-                        <li><a href="#" class="menu__link">Pages</a></li>
-                    </ul>
-                </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="menu"><a href="#"></a>
+          <ul class="menu__list">
+            <li>
+              <a href="index.html" class="menu__link">HOME</a>
+              <ul class="dropdown page-dropdown">
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="menu__link">all products</a>
+              <ul class="dropdown page-dropdown">
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="menu__link">wordpress</a>
+              <ul class="dropdown page-dropdown">
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="menu__link">festures</a>
+              <ul class="dropdown page-dropdown">
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+                <li><a href="#">Some text</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Pages</a>
+              <ul class="dropdown page-dropdown page-dropdown-last">
+                <li>
+                  <div class="page-dropdown-last__title">MartPlace Pages</div>
+                  <ul class="page-dropdown-last__list">
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="page-dropdown-last__title">Dashboard</div>
+                  <ul class="page-dropdown-last__list">
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="page-dropdown-last__title">Others Pages</div>
+                  <ul class="page-dropdown-last__list">
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                    <li><a href="#">some text</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-                <div class="header__bottom-search-form">
-                    <form action="#" class="header-search-form magnifier-form">
-                        <input type="text" placeholder="Search product" class="magnifier-form__input">
-                        <button class="header-search-form__btn magnifier-form__btn" type="submit"></button>
-                    </form>
-                </div>
-            </div>
+        <div class="header__bottom-search-form">
+          <form action="#" class="header-search-form magnifier-form">
+            <input type="text" placeholder="Search product" class="magnifier-form__input">
+            <button class="header-search-form__btn magnifier-form__btn" type="submit"></button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </header>
     <!-- header end -->
     <div class="content">
@@ -100,7 +391,7 @@
               <input type="text" class="form__bottom-input form__bottom-input_password" placeholder="Enter your password..."></input>
               <label class="form__bottom-label">
                 <input type="checkbox" class="form__bottom-checkbox">
-                Remember me
+                <span class="form__bottom-text-checkbox">Remember me</span>
               </label>
               <button type="submit" class="form__bottom-btn btn btn_bg_b btn_color_w btn_figure_elipse">Login Now</button>
               <div class="form__bottom-inner">
@@ -162,7 +453,7 @@
             worry, we won't send spam!</p>
           <div class="footer-top__item-search">
             <form action="#" class="magnifier-form">
-              <input type="text" placeholder="Enter email" class="magnifier-form__input">
+              <input type="email" placeholder="Enter email" class="magnifier-form__input">
               <button class="magnifier-form__btn" type="submit">Submit</button>
             </form>
           </div>

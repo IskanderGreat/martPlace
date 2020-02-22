@@ -14,7 +14,6 @@ $(function() {
   });
 
   $('.filter-bar__btn-row').click(function() {
-    console.log("hello");
     $(this).addClass('filter-bar__btn_active');
     $('.filter-bar__btn-grid').removeClass('filter-bar__btn_active');
   });
@@ -22,12 +21,9 @@ $(function() {
 
 
   // single-buy start 
-  $('.single-buy__radio').click(function() {
-    if($(this).hasClass('js-active-radio')) {
-      
-      $('.single-buy__radio').not($(this)).removeClass('js-active-radio');
-    }
-    $(this).next().next().slideToggle(300);
+  $(".js-radio").click(function() {
+    $(".single-buy__description").removeClass("see");
+    $(this).parent().next().addClass("see");
   });
 
 
@@ -69,12 +65,12 @@ $(function() {
   // pricing-range__slider end
 
   // 
-  $(".button-1").click(function() {
+  $(".js-filter-bar__btn-row").click(function() {
     $(".ticket").addClass("ticket-large");
 
   });
 
-  $(".button-2").click(function() {
+  $(".js-filter-bar__btn-grid").click(function() {
     $(".ticket").removeClass("ticket-large");
 
   });
